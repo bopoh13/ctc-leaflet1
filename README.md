@@ -1,4 +1,4 @@
-﻿### Website on static site generator Jekyll
+### Website on static site generator Jekyll
 
 *Checking the ability to determine the build status on travis-ci.org*
 
@@ -10,27 +10,27 @@ http://prgssr.ru/documentation/05_directory_structure
 
 ```
 .
-├── _config.yml
-├── _data
-|   └── members.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.md
-|   └── on-simplicity-in-technology.md
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
-|   └── 2009-04-26-barcamp-boston-4-roundup.md
-├── _sass
-|   ├── _base.scss
-|   └── _layout.scss
-├── _site
-├── .jekyll-metadata
-└── index.html # can also be an 'index.md' with valid YAML Frontmatter
++-- _config.yml
++-- _data
+|   L-- members.yml
++-- _drafts
+|   +-- begin-with-the-crazy-ideas.md
+|   L-- on-simplicity-in-technology.md
++-- _includes
+|   +-- footer.html
+|   L-- header.html
++-- _layouts
+|   +-- default.html
+|   L-- post.html
++-- _posts
+|   +-- 2007-10-29-why-every-programmer-should-play-nethack.md
+|   L-- 2009-04-26-barcamp-boston-4-roundup.md
++-- _sass
+|   +-- _base.scss
+|   L-- _layout.scss
++-- _site
++-- .jekyll-metadata
+L-- index.html # can also be an 'index.md' with valid YAML Frontmatter
 ```
 
 #
