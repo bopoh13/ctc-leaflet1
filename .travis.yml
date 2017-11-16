@@ -9,12 +9,12 @@ rvm:
 install:
   - bundle install
   - gem install jekyll
-  - gem install jekyll-feed
+#  - gem install jekyll-feed
 
 branches:
   only:
-  - master
-  - /pages-(.*)/ # test every branch which starts with "pages-"
+  - [master]
+#  - /pages-(.*)/ # test every branch which starts with "pages-"
 
 env:
   global:
