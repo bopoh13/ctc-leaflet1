@@ -38,7 +38,7 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      layout: "default.liquid"
+      layout: "default"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
