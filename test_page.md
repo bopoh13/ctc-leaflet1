@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Test
+title: Test Page
 permalink: /test/
 robots: noindex, nofollow
 ---
