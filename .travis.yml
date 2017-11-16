@@ -1,5 +1,5 @@
 bundler_args: --without benchmark:site:development
-script: script/cibuild
+#script: script/cibuild
 cache: bundler
 language: ruby
 
