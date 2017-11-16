@@ -1,5 +1,5 @@
 bundler_args: --without benchmark:site:development
-script: script/cibuild
+#script: script/cibuild
 cache: bundler
 language: ruby
 
@@ -9,7 +9,7 @@ rvm:
 install:
   - bundle install
   - gem install jekyll
-  - gem install jekyll-sitemap
+  - gem install jekyll-feed
 
 branches:
   only:
