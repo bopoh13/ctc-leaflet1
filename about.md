@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+robots: noindex, nofollow
 ---
 
 This is the base Jekyll theme. You can find out more info 
