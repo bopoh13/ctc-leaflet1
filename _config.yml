@@ -39,7 +39,7 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "pages" # previously `page` in Jekyll 2.2.
     values:
-      layout: "default"
+      layout: "main"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
