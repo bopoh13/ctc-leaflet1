@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include head.html %}
+  {% include head.liquid %}
 
   <body>
 
-    {% include header.html %}
+    {% include header.liquid %}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -14,7 +14,7 @@
       <div class="wrapper">Templates sent to the directory <b>_layouts</b></div>
     </main>
 
-    {% include footer.html %}
+    {% include footer.liquid %}
 
   </body>
 

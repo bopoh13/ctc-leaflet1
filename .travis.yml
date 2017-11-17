@@ -13,7 +13,7 @@ install:
 
 branches:
   only:
-  - [master]
+  - master
 #  - /pages-(.*)/ # test every branch which starts with "pages-"
 
 env:
