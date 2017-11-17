@@ -1,4 +1,5 @@
 ---
+layout: default2
 title: Test Page
 permalink: /test/
 robots: noindex, nofollow
