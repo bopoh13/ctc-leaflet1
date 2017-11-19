@@ -1,6 +1,6 @@
 ---
 title: Test Map
-permalink: /map/
+permalink: /examples/geojson/
 layout: redirected
 
 sitemap: false
