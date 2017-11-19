@@ -23,7 +23,7 @@ robots: noindex, nofollow
 	}).addTo(map);
 
 	var baseballIcon = L.icon({
-		iconUrl: 'baseball-marker.png',
+		iconUrl: '../examples/geojson/baseball-marker.png',
 		iconSize: [32, 37],
 		iconAnchor: [16, 37],
 		popupAnchor: [0, -28]
