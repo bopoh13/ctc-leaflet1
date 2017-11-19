@@ -12,7 +12,7 @@ robots: noindex, nofollow
 
 <div id="map" class="map" style="height: 450px"></div>
 
-<script src="sample-geojson.js"></script>
+<script src="examples/geojson/sample-geojson.js"></script>
 <script>
 
 	var map = L.map('map').setView([39.74739, -105], 13);
@@ -86,4 +86,4 @@ robots: noindex, nofollow
 
 </script>
 
-<p><a href="geojson-example.html">View example on a separate page &rarr;</a></p>
+<p><a href="examples/geojson/geojson-example.html">View example on a separate page &rarr;</a></p>
