@@ -12,10 +12,10 @@ robots: noindex, nofollow
 
 <div id="map" class="map" style="height: 450px"></div>
 
-<script src="../examples/geojson/sample-geojson.js"></script>
+<script src="../examples/sample-geojson-test.js"></script>
 <script>
 
-	var map = L.map('map').setView([39.74739, -105], 13);
+	var map = L.map('map').setView([52.546, 39.263], 14);
 
 	L.tileLayer(MB_URL, {
 		attribution: MB_ATTR,
