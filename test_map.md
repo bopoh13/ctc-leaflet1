@@ -28,7 +28,7 @@ robots: noindex, nofollow
 
 	var bounds = new L.GPX("http://psha.org.ru/leaflet-plugins/examples/fells_loop.gpx", {
 		async: true
-	}).on('click', function (e) {
+	}).on('loaded', function (e) {
 	    // There event is event object
 	    // there e.type === 'click'
 	    // there e.lanlng === L.LatLng on map
