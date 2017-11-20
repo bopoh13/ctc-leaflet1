@@ -40,26 +40,6 @@ robots: noindex, nofollow
 		layer.bindPopup(popupContent);
 	}
 
-	L.geoJson({features: [bicycleRental, campus]}, {
-
-		style: function (feature) {
-			return feature.properties && feature.properties.style;
-		},
-
-		onEachFeature: onEachFeature,
-
-		pointToLayer: function (feature, latlng) {
-			return L.circleMarker(latlng, {
-				radius: 8,
-				fillColor: "#ff7800",
-				color: "#000",
-				weight: 1,
-				opacity: 1,
-				fillOpacity: 0.8
-			});
-		}
-	}).addTo(map);
-
 	L.geoJson(freeBus, {
 
 		filter: function (feature, layer) {
