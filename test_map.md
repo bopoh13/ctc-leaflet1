@@ -15,7 +15,7 @@ robots: noindex, nofollow
 <script src="../examples/sample-geojson-test.js"></script>
 <script>
 
-	var map = L.map('map').setView([52.546, 39.263], 14);
+	var map = L.map('map').setView([52.756, 39.257], 14);
 
 	L.tileLayer(MB_URL, {
 		attribution: MB_ATTR,
