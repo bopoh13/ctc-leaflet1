@@ -23,6 +23,8 @@ robots: noindex, nofollow
 		id: 'mapbox.light'
 	}).addTo(map);
 
+	L.control.scale().addTo(map); // A simple scale control
+
 	var baseballIcon = L.icon({
 		iconUrl: '../examples/geojson/baseball-marker.png',
 		iconSize: [32, 37],
