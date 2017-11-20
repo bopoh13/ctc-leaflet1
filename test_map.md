@@ -14,12 +14,6 @@ robots: noindex, nofollow
 <script src="../examples/sample-geojson-test.js"></script>
 <script>
 
-	/* var track = new L.GPX("http://psha.org.ru/leaflet-plugins/examples/fells_loop.gpx", {
-		async: true
-	}).on("loaded", function(e) {
-		map.fitBounds(e.target.getBounds());
-	}); */
-
 	var map = L.map('map', {
 		minZoom: 3
 	}).setView([52.753, 39.298], 12);
@@ -34,9 +28,14 @@ robots: noindex, nofollow
 
 	var bounds = [[51.505, -0.03], [51.5, -0.045]];
 
-	L.rectangle(bounds).addTo(map);
-
-	map.fitBounds(bounds);
+	var rect = L.rectangle(bounds, {color: 'blue', weight: 1}).on('click', function (e) {
+	    // There event is event object
+	    // there e.type === 'click'
+	    // there e.lanlng === L.LatLng on map
+	    // there e.target.getLatLngs() - your rectangle coordinates
+	    // but e.target !== rect
+	    console.info(e);
+	}).addTo(map);
 
 
 	var baseballIcon = L.icon({
