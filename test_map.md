@@ -26,7 +26,7 @@ robots: noindex, nofollow
 	L.control.scale().addTo(map); // A simple scale control
 
 
-	var bounds = [[51.505, 39.293], [51.5, 39.295]];
+	var bounds = [[52.505, 39.23], [52.5, 39.25]];
 
 	var rect = L.rectangle(bounds, {
 		color: 'blue',
