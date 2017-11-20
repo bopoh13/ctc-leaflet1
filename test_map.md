@@ -5,7 +5,6 @@ permalink: /map/
 robots: noindex, nofollow
 ---
 
-
 <h3>Using GeoJSON with Leaflet</h3>
 
 <p>GeoJSON is becoming a very popular data format among many GIS technologies and services - it's simple, lightweight, straightforward, and Leaflet is quite good at handling it. In this example, you'll learn how to create and interact with map vectors created from <a href="http://geojson.org/">GeoJSON</a> objects.</p>
@@ -30,8 +29,8 @@ robots: noindex, nofollow
 	});
 
 	function onEachFeature(feature, layer) {
-		var popupContent = "<p>I started out as a GeoJSON " +
-				feature.geometry.type + ", but now I'm a Leaflet vector!</p>";
+		var popupContent = "<p>I started out as a GeoJSON <b>" +
+				feature.geometry.type + "</b>, but now I'm a Leaflet vector!</p>";
 
 		if (feature.properties && feature.properties.popupContent) {
 			popupContent += feature.properties.popupContent;
@@ -41,9 +40,9 @@ robots: noindex, nofollow
 	}
 
 	var LineStyle = {
-		"color": "#0e0",
-		"weight": 2,
-		"opacity": 0.65
+		"color": "#0d0",
+		"weight": 6,
+		"opacity": 0.35
 	};
 
 	L.geoJson(freeBus, {
