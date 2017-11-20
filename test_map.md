@@ -15,7 +15,7 @@ robots: noindex, nofollow
 <script src="../examples/sample-geojson-test.js"></script>
 <script>
 
-	var map = L.map('map').setView([52.753, 39.298], 14);
+	var map = L.map('map').setView([52.753, 39.298], 12);
 
 	L.tileLayer(MB_URL, {
 		attribution: MB_ATTR,
@@ -40,7 +40,15 @@ robots: noindex, nofollow
 		layer.bindPopup(popupContent);
 	}
 
+	var LineStyle = {
+		"color": "#0e0",
+		"weight": 2,
+		"opacity": 0.65
+	};
+
 	L.geoJson(freeBus, {
+
+		style: Line,
 
 		filter: function (feature, layer) {
 			if (feature.properties) {
