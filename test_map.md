@@ -31,7 +31,7 @@ robots: noindex, nofollow
 
 	L.control.scale().addTo(map); // A simple scale control
 
-	L.rectangle([[51.505, -0.03], [51.5, -0.045]]).addTo(map);
+	// L.rectangle([[51.505, -0.03], [51.5, -0.045]]).addTo(map);
 
 	var baseballIcon = L.icon({
 		iconUrl: '../examples/geojson/baseball-marker.png',
