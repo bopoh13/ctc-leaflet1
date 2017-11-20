@@ -26,9 +26,12 @@ robots: noindex, nofollow
 	L.control.scale().addTo(map); // A simple scale control
 
 
-	var bounds = [[51.505, 39.23], [51.5, 39.245]];
+	var bounds = [[51.505, 39.293], [51.5, 39.295]];
 
-	var rect = L.rectangle(bounds, {color: 'blue', weight: 1}).on('click', function (e) {
+	var rect = L.rectangle(bounds, {
+		color: 'blue',
+		weight: 1
+	}).on('click', function (e) {
 	    // There event is event object
 	    // there e.type === 'click'
 	    // there e.lanlng === L.LatLng on map
