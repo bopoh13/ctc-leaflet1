@@ -16,7 +16,7 @@ robots: noindex, nofollow
 
 	var map = L.map('map', {
 		minZoom: 3
-	).setView([52.753, 39.298], 12);
+	}).setView([52.753, 39.298], 12);
 
 	L.tileLayer(MB_URL, {
 		attribution: MB_ATTR,
