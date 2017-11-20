@@ -26,9 +26,9 @@ robots: noindex, nofollow
 	L.control.scale().addTo(map); // A simple scale control
 
 
-	var bounds = [[51.505, -0.03], [51.5, -0.045]];
-
-	var rect = L.rectangle(bounds, {color: 'blue', weight: 1}).on('click', function (e) {
+	var bounds = new L.GPX("http://psha.org.ru/leaflet-plugins/examples/fells_loop.gpx", {
+		async: true
+	}).on('click', function (e) {
 	    // There event is event object
 	    // there e.type === 'click'
 	    // there e.lanlng === L.LatLng on map
