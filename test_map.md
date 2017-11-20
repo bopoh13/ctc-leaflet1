@@ -14,6 +14,12 @@ robots: noindex, nofollow
 <script src="../examples/sample-geojson-test.js"></script>
 <script>
 
+	var track = new L.GPX("http://psha.org.ru/leaflet-plugins/examples/fells_loop.gpx", {
+		async: true
+	}).on("loaded", function(e) {
+		map.fitBounds(e.target.getBounds());
+	});
+
 	var map = L.map('map', {
 		minZoom: 3
 	}).setView([52.753, 39.298], 12);
@@ -24,6 +30,8 @@ robots: noindex, nofollow
 	}).addTo(map);
 
 	L.control.scale().addTo(map); // A simple scale control
+
+	L.rectangle([[51.505, -0.03], [51.5, -0.045]]).addTo(map);
 
 	var baseballIcon = L.icon({
 		iconUrl: '../examples/geojson/baseball-marker.png',
