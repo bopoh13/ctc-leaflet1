@@ -48,7 +48,7 @@ robots: noindex, nofollow
 
 	L.geoJson(freeBus, {
 
-		style: Line,
+		style: LineStyle,
 
 		filter: function (feature, layer) {
 			if (feature.properties) {
