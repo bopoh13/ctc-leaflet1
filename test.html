@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Пример анимации на HTML-канве</title>
+    <script type="text/javascript"><!--
+window.addEventListener('load', function () {
+  // Получить элемент канвы.
+  var canvas = document.getElementById('myCanvas'),
+      w = 4,
+      h = 4,
+      zoompx = 6,
+      step = 'zoomin';
+
+  if (!canvas || !canvas.getContext) {
+    return;
+  }
+
+  // Получить 2d окружение канвы.
+  var ctx = canvas.getContext('2d');
+  if (!ctx) {
+    return;
+  }
+
+  var K = 4*((Math.SQRT2-1)/3);
+
+setInterval(function () {
+  if (step == 'zoomin') {
+    w += zoompx;
+    h += zoompx;
+  } else if (step == 'zoomout') {
+    w -= zoompx;
+    h -= zoompx;
+  }
+
+  if (w > canvas.width) {
+    w = canvas.width;
+    step = 'zoomout';
+  } else if (w < 4) {
+    w = 4;
+    step = 'zoomin';
+  }
+
+  if (h > canvas.height) {
+    h = canvas.height;
+    step = 'zoomout';
+  } else if (h < 4) {
+    h = 4;
+    step = 'zoomin';
+  }
+
+  // Создать радиальный градиент: x0, y0, r0, x1, y1, r1.
+  // Начальные координаты (x0,y0) и радиус r0,
+  // за которыми следуют конечные координаты (x1,y1) и радиус r1.
+  var gradient = ctx.createRadialGradient(
+      Math.round(w/2), Math.round(h/2), 0, Math.round(w/2), Math.round(h/2),
+      Math.round(Math.min(w, h)/2));
+
+  gradient.addColorStop(0, "#ff0");
+  gradient.addColorStop(1, "#0f0");
+
+  // Использование градиента в свойстве fillStyle.
+  ctx.fillStyle = gradient;
+
+  // Радиус и центр.
+  var cx = w/2,
+      cy = h/2,
+
+      // Радиус*Kappa, для узлов кривых Безье
+      rx = cx*K,
+      ry = cy*K;
+
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  ctx.setTransform(1, 0, 0, 1, Math.round((canvas.width - w) / 2),
+    Math.round((canvas.height - h) / 2));
+
+  ctx.beginPath();
+
+  // startX, startY
+  ctx.moveTo(cx, 0);
+
+  // Узлы: cp1x, cp1y, cp2x, cp2y, destx, desty
+  // обход по часовой стрелке: верхняя, правая, нижняя, левая
+  ctx.bezierCurveTo(cx + rx, 0, w, cy - ry, w, cy);
+  ctx.bezierCurveTo(w, cy + ry, cx + rx, h, cx, h);
+  ctx.bezierCurveTo(cx - rx, h, 0, cy + ry, 0, cy);
+  ctx.bezierCurveTo(0, cy - ry, cx - rx, 0, cx, 0);
+
+  ctx.fill();
+  ctx.stroke();
+  ctx.closePath();
+}, 20);
+}, false);
+    // --></script>
+  </head>
+  <body>
+
+<svg version="1.1"
+  width="320" height="320"
+  xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="circleGrad">
+      <stop offset="0%"   stop-color="rgb(255, 255, 0)" />
+      <stop offset="100%" stop-color="rgb(  0, 255, 0)" />
+    </radialGradient>
+  </defs>
+
+  <ellipse fill="url(#circleGrad)" stroke="#000" cx="50%"
+  cy="50%" rx="50%" ry="50%">
+    <animate attributeName="rx" values="0%;50%;0%" dur="2s"
+      repeatCount="indefinite" />
+    <animate attributeName="ry" values="0%;50%;0%" dur="2s"
+      repeatCount="indefinite" />
+  </ellipse>
+</svg>
+<br>SVG
+<hr>
+Canvas<br>
+    <p><canvas id="myCanvas" width="320" height="320">Ваш браузер не поддерживает HTML 5 Canvas.</p>
+  </body>
+</html>
