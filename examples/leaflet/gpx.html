@@ -3,7 +3,7 @@
 	<title>Leaflet</title>
 	<link rel="stylesheet" href="http://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
 	<script src="http://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
-	<script src="/examples/leaflet/vector/GPX.js"></script>
+	<script src="https://raw.githubusercontent.com/shramov/leaflet-plugins/master/layer/vector/GPX.js"></script>
 </head>
 <body>
 	<div style="width:100%; height:100%" id="map"></div>
@@ -20,7 +20,7 @@
 			shadowAnchor: [4, 62],
 			popupAnchor: [-3, -76]
 		});
-		var track = new L.GPX("fells_loop.gpx", {
+		var track = new L.GPX("https://raw.githubusercontent.com/shramov/leaflet-plugins/master/examples/fells_loop.gpx", {
 			async: true
 		}).on("loaded", function(e) {
 			map.fitBounds(e.target.getBounds());
