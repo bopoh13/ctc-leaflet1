@@ -1,11 +1,16 @@
-<!DOCTYPE html>
+п»ї<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Пример анимации на HTML-канве</title>
+    <title>РџСЂРёРјРµСЂ Р°РЅРёРјР°С†РёРё РЅР° HTML-РєР°РЅРІРµ</title>
+    <script>
+    if (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1")) {
+        document.documentElement.className = "svg";
+    }
+    </script>
     <script type="text/javascript"><!--
 window.addEventListener('load', function () {
-  // Получить элемент канвы.
+  // РџРѕР»СѓС‡РёС‚СЊ СЌР»РµРјРµРЅС‚ РєР°РЅРІС‹.
   var canvas = document.getElementById('myCanvas'),
       w = 4,
       h = 4,
@@ -16,7 +21,7 @@ window.addEventListener('load', function () {
     return;
   }
 
-  // Получить 2d окружение канвы.
+  // РџРѕР»СѓС‡РёС‚СЊ 2d РѕРєСЂСѓР¶РµРЅРёРµ РєР°РЅРІС‹.
   var ctx = canvas.getContext('2d');
   if (!ctx) {
     return;
@@ -49,9 +54,9 @@ setInterval(function () {
     step = 'zoomin';
   }
 
-  // Создать радиальный градиент: x0, y0, r0, x1, y1, r1.
-  // Начальные координаты (x0,y0) и радиус r0,
-  // за которыми следуют конечные координаты (x1,y1) и радиус r1.
+  // РЎРѕР·РґР°С‚СЊ СЂР°РґРёР°Р»СЊРЅС‹Р№ РіСЂР°РґРёРµРЅС‚: x0, y0, r0, x1, y1, r1.
+  // РќР°С‡Р°Р»СЊРЅС‹Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ (x0,y0) Рё СЂР°РґРёСѓСЃ r0,
+  // Р·Р° РєРѕС‚РѕСЂС‹РјРё СЃР»РµРґСѓСЋС‚ РєРѕРЅРµС‡РЅС‹Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ (x1,y1) Рё СЂР°РґРёСѓСЃ r1.
   var gradient = ctx.createRadialGradient(
       Math.round(w/2), Math.round(h/2), 0, Math.round(w/2), Math.round(h/2),
       Math.round(Math.min(w, h)/2));
@@ -59,14 +64,14 @@ setInterval(function () {
   gradient.addColorStop(0, "#ff0");
   gradient.addColorStop(1, "#0f0");
 
-  // Использование градиента в свойстве fillStyle.
+  // РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РіСЂР°РґРёРµРЅС‚Р° РІ СЃРІРѕР№СЃС‚РІРµ fillStyle.
   ctx.fillStyle = gradient;
 
-  // Радиус и центр.
+  // Р Р°РґРёСѓСЃ Рё С†РµРЅС‚СЂ.
   var cx = w/2,
       cy = h/2,
 
-      // Радиус*Kappa, для узлов кривых Безье
+      // Р Р°РґРёСѓСЃ*Kappa, РґР»СЏ СѓР·Р»РѕРІ РєСЂРёРІС‹С… Р‘РµР·СЊРµ
       rx = cx*K,
       ry = cy*K;
 
@@ -82,8 +87,8 @@ setInterval(function () {
   // startX, startY
   ctx.moveTo(cx, 0);
 
-  // Узлы: cp1x, cp1y, cp2x, cp2y, destx, desty
-  // обход по часовой стрелке: верхняя, правая, нижняя, левая
+  // РЈР·Р»С‹: cp1x, cp1y, cp2x, cp2y, destx, desty
+  // РѕР±С…РѕРґ РїРѕ С‡Р°СЃРѕРІРѕР№ СЃС‚СЂРµР»РєРµ: РІРµСЂС…РЅСЏСЏ, РїСЂР°РІР°СЏ, РЅРёР¶РЅСЏСЏ, Р»РµРІР°СЏ
   ctx.bezierCurveTo(cx + rx, 0, w, cy - ry, w, cy);
   ctx.bezierCurveTo(w, cy + ry, cx + rx, h, cx, h);
   ctx.bezierCurveTo(cx - rx, h, 0, cy + ry, 0, cy);
@@ -97,7 +102,12 @@ setInterval(function () {
     // --></script>
   </head>
   <body>
-
+onerror<br>
+<img src="https://voormedia.com/examples/svg.svg" onerror="this.onerror=null; this.src='https://voormedia.com/examples/png.png'">
+<br>className<br>
+    <img class="svg" src="https://voormedia.com/examples/svg.svg" alt="SVG image">
+    <img class="png" src="https://voormedia.com/examples/png.png" alt="Fallback image">
+<br><hr>
 <svg version="1.1"
   width="320" height="320"
   xmlns="http://www.w3.org/2000/svg">
@@ -119,6 +129,6 @@ setInterval(function () {
 <br>SVG
 <hr>
 Canvas<br>
-    <p><canvas id="myCanvas" width="320" height="320">Ваш браузер не поддерживает HTML 5 Canvas.</p>
+    <p><canvas id="myCanvas" width="320" height="320">Р’Р°С€ Р±СЂР°СѓР·РµСЂ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚ HTML 5 Canvas.</p>
   </body>
 </html>

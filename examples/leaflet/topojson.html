@@ -9,7 +9,7 @@
 	<div style="width:100%; height:100%" id="map"></div>
 	<script type='text/javascript'>
 		var map = new L.Map('map', {center: new L.LatLng(58.4, 43.0), zoom: 3});
-		var osm = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+		var osm = new L.TileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 		var borders = new L.TOPOJSON("https://raw.githack.com/shramov/leaflet-plugins/master/examples/country.min.topojson", {async: true});
 		borders.on('addlayer',function(e){
 			e.layer.eachLayer(function(dist){
