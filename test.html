@@ -3,11 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Пример анимации на HTML-канве</title>
-    <script>
-    if (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1")) {
-        document.documentElement.className = "svg";
-    }
-    </script>
     <script type="text/javascript"><!--
 window.addEventListener('load', function () {
   // Получить элемент канвы.
@@ -104,9 +99,10 @@ setInterval(function () {
   <body>
 onerror<br>
 <img src="https://voormedia.com/examples/svg.svg" onerror="this.onerror=null; this.src='https://voormedia.com/examples/png.png'">
-<br>className<br>
-    <img class="svg" src="https://voormedia.com/examples/svg.svg" alt="SVG image">
-    <img class="png" src="https://voormedia.com/examples/png.png" alt="Fallback image">
+<br>xlink:href<br>
+<svg width="96" height="96">
+    <image xlink:href="http://lynn.ru/examples/svg/svg.svg" src="http://lynn.ru/examples/svg/svg.png" width="96" height="96"/>
+</svg>
 <br><hr>
 <svg version="1.1"
   width="320" height="320"
