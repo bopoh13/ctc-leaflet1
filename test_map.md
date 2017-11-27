@@ -14,9 +14,13 @@ robots: noindex, nofollow
 <script src="../examples/sample-geojson-test.js"></script>
 <script>
 
+	var radius = 1000;
+	var lat = 52.753;
+	var lng = 39.298;
+
 	var map = L.map('map', {
 		minZoom: 3
-	}).setView([52.753, 39.298], 12);
+	}).setView([lat, lng], 12);
 
 	L.tileLayer(MB_URL, {
 		attribution: MB_ATTR,
@@ -90,6 +94,15 @@ robots: noindex, nofollow
 	}).addTo(map);
 
 	coorsLayer.addData(coorsField);
+	
+	
+	var circle = new L.circle([lat, lng], radius);
+	map.addLayer(circle);
+
+	map.on("move", function() {
+		var center = map.getCenter();
+		circle.setLatLng(center);
+	});
 
 </script>
 
