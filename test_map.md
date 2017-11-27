@@ -10,6 +10,7 @@ robots: noindex, nofollow
 <p>GeoJSON is becoming a very popular data format among many GIS technologies and services - it's simple, lightweight, straightforward, and Leaflet is quite good at handling it. In this example, you'll learn how to create and interact with map vectors created from <a href="http://geojson.org/">GeoJSON</a> objects.</p>
 
 <div id="map" class="map" style="height: 450px"></div>
+<a href='#' id='export'>Export Data</a>
 
 <script src="../examples/sample-geojson-test.js"></script>
 <script>
@@ -96,12 +97,17 @@ robots: noindex, nofollow
 	coorsLayer.addData(coorsField);
 	
 	
-	var circle = new L.circle([lat, lng], radius);
+	var circle = new L.circle([lat, lng], radius, {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.2
+	});
 	map.addLayer(circle);
 
 	map.on("move", function() {
 		var center = map.getCenter();
 		circle.setLatLng(center);
+		console.log(circle._latlng.lat, circle._latlng.lng);
 	});
 
 </script>
