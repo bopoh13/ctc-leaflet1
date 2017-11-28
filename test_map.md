@@ -9,8 +9,9 @@ robots: noindex, nofollow
 
 <p>GeoJSON is becoming a very popular data format among many GIS technologies and services - it's simple, lightweight, straightforward, and Leaflet is quite good at handling it. In this example, you'll learn how to create and interact with map vectors created from <a href="http://geojson.org/">GeoJSON</a> objects.</p>
 
-<div id="map" class="map" style="height: 450px"></div>
-<a href='#' id='export'>Export Data</a>
+<div id="map" class="leaflet-container leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag" style="position: relative;">
+<div class="leaflet-bottom leaflet-left"><a href='#' id='export'>Export Data</a></div>
+</div>
 
 <script src="../examples/sample-geojson-test.js"></script>
 <script>
