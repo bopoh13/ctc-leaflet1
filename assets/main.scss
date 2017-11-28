@@ -2,5 +2,19 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-# @import "minima";
-@import "ctc-leaflet";
+@import "minima";
+
+#export {
+    position:absolute;
+    top:50px;
+    right:10px;
+    z-index:100;
+    background:white;
+    color:black;
+    padding:6px;
+    border-radius:4px;
+    font-family:Helvetica Neue;
+    cursor: pointer;
+    font-size:12px;
+    text-decoration:none;
+}
