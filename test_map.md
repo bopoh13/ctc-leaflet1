@@ -111,7 +111,7 @@ robots: noindex, nofollow
 	map.on("move", function() {
 		var center = map.getCenter();
 		circle.setLatLng(center);
-		console.log(L.version, circle._latlng.lat, circle._latlng.lng);
+		console.log(circle._latlng.lat, circle._latlng.lng);
 	});
 
 
