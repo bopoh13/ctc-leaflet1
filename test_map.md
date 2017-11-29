@@ -117,7 +117,7 @@ robots: noindex, nofollow
 		}
 	}).addTo(map);
 
-	marker.bindTooltip("my tooltip text").openTooltip();
+	// marker.bindTooltip("my tooltip text").openTooltip();
 
 </script>
 
