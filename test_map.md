@@ -28,7 +28,7 @@ robots: noindex, nofollow
 		id: 'mapbox.light'
 	}).addTo(map);
 
-	L.control({position: 'topright'}).scale({
+	L.control().scale({
 		metric: true,
 		imperial: false,
 		updateWhenIdle: false
@@ -122,7 +122,7 @@ robots: noindex, nofollow
 		}
 	}).addTo(map);
 
-	marker.bindTooltip("my tooltip text").openTooltip();
+	//marker.bindTooltip("my tooltip text").openTooltip();
 
 </script>
 
