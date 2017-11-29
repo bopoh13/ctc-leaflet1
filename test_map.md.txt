@@ -32,7 +32,7 @@ robots: noindex, nofollow
 		metric: true,
 		imperial: false,
 		updateWhenIdle: false
-	}).addTo(map); // Пример отображения масштаба
+	}).addTo(map); // 
 
 
 	var bounds = [[52.505, 39.23], [52.5, 39.25]];
@@ -100,7 +100,7 @@ robots: noindex, nofollow
 
 	coorsLayer.addData(coorsField);
 	
-	// Мишень в центре экрана
+	// 
 	var circle = new L.circle([lat, lng], radius, {
 		color: 'red',
 		fillColor: '#f03',
