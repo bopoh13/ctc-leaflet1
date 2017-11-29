@@ -28,7 +28,7 @@ robots: noindex, nofollow
 		id: 'mapbox.light'
 	}).addTo(map);
 
-	L.control().scale({
+	L.control({position: 'topright'}).scale({
 		metric: true,
 		imperial: false,
 		updateWhenIdle: false
@@ -111,18 +111,19 @@ robots: noindex, nofollow
 	map.on("move", function() {
 		var center = map.getCenter();
 		circle.setLatLng(center);
-		console.log(L.version, circle._latlng.lat, circle._latlng.lng);
+		console.log(circle._latlng.lat, circle._latlng.lng);
 	});
 
 
-	L.marker(new L.LatLng(bounds.getNorth(), bounds.getCenter().lng), {
+	/* L.marker(new L.LatLng(bounds.getNorth(), bounds.getCenter().lng), {
 	{
 		tooltip: {
 			html: "I'm a tooltip!"
 		}
 	}).addTo(map);
 
-	//marker.bindTooltip("my tooltip text").openTooltip();
+	marker.bindTooltip("my tooltip text").openTooltip();
+	*/
 
 </script>
 
