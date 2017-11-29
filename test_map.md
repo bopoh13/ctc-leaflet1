@@ -111,7 +111,6 @@ robots: noindex, nofollow
 	});
 
 	L.marker(new L.LatLng(bounds.getNorth(), bounds.getCenter().lng), {
-	{
 		tooltip: {
 			html: "I'm a tooltip!"
 		}
