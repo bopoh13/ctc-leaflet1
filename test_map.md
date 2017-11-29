@@ -28,7 +28,7 @@ robots: noindex, nofollow
 		id: 'mapbox.light'
 	}).addTo(map);
 
-	L.control().scale().addTo(map); // Пример отображения масштаба
+	L.control.scale().addTo(map); // Пример отображения масштаба
 
 
 	var bounds = [[52.505, 39.23], [52.5, 39.25]];
