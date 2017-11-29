@@ -28,11 +28,7 @@ robots: noindex, nofollow
 		id: 'mapbox.light'
 	}).addTo(map);
 
-	L.control().scale({
-		metric: true,
-		imperial: false,
-		updateWhenIdle: false
-	}).addTo(map); // Пример отображения масштаба
+	L.control().scale().addTo(map); // Пример отображения масштаба
 
 
 	var bounds = [[52.505, 39.23], [52.5, 39.25]];
@@ -114,6 +110,14 @@ robots: noindex, nofollow
 		console.log(circle._latlng.lat, circle._latlng.lng);
 	});
 
+	L.marker(new L.LatLng(bounds.getNorth(), bounds.getCenter().lng), {
+	{
+		tooltip: {
+			html: "I'm a tooltip!"
+		}
+	}).addTo(map);
+
+	marker.bindTooltip("my tooltip text").openTooltip();
 
 </script>
 
