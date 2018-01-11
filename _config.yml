@@ -26,8 +26,8 @@ url: "https://bopoh13.github.io" # the base hostname & protocol for your site, e
 #github_username:  jekyll
 
 # Build settings
-## Jekyll 3 now only supports Kramdown for Markdown https://toster.ru/q/331849
-markdown: kramdown
+markdown: >- # Jekyll 3 now only supports Kramdown for Markdown
+  kramdown
 timezone: Europe/Moscow
 
 #theme: minima
