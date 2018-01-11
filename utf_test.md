@@ -1,4 +1,4 @@
-﻿---
+---
 layout: page
 title: Test UTF-8
 permalink: /utf/
