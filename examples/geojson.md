@@ -1,5 +1,5 @@
 ---
 title: Amazing map
 sitemap: false
-redirect_to:  geojson/
+redirect_to:  /examples/geojson/
 ---

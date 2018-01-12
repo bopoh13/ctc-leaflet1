@@ -3,7 +3,7 @@ layout: page
 title: Test Map
 permalink: /map/
 redirect_from:
-  - /post/333
+  - /post/333/
 robots: noindex, nofollow
 sitemap: false
 ---

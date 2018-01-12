@@ -1,7 +1,7 @@
 ---
 layout: redirected
-title: Test Page 1 ->
-redirect_to: /_posts/2017-11-16-welcome.md
+title: Test Page 2
+redirect_to: /post/333/
 sitemap: false
 ---
 
