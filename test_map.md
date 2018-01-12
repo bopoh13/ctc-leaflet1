@@ -2,9 +2,7 @@
 layout: page
 title: Test Map
 permalink: /map/
-redirect_from: /post/333/
 robots: noindex, nofollow
-sitemap: false
 ---
 
 <h3>Using GeoJSON with Leaflet</h3>
