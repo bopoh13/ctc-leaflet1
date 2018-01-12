@@ -33,6 +33,7 @@ timezone: Europe/Moscow
 #theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 
 defaults:
   - scope:

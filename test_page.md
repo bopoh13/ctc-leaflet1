@@ -1,11 +1,12 @@
 ---
 layout: page
-title: Test Page
+title: Test Redirect Page
 permalink: /test/
+redirect_to: https://github.com/jekyll/jekyll-redirect-from
 robots: noindex, nofollow
+sitemap: false
 ---
 
-Test page.  
-We win!
+Redirect!
 
 Finish.
