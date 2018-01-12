@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Test Redirect Page
+title: Test Redirect Page - ?
 permalink: /test/
-redirect_to: https://github.com/jekyll/jekyll-redirect-from
+redirect_from: /jekyll/update/2017/11/16/welcome.html
 robots: noindex, nofollow
 sitemap: false
 ---
