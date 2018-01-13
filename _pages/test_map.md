@@ -2,15 +2,14 @@
 layout: page
 title: Test Map
 permalink: /map/
-redirect_from:
-  - /post/333/
+redirect_from: /post/333/
 robots: noindex, nofollow
 sitemap: false
 ---
 
 <h3>Using GeoJSON with Leaflet</h3>
 
-</h2>https://bopoh13.github.io/ctc-leaflet1/post/333/</h2>
+<h2>https://bopoh13.github.io/ctc-leaflet1/post/333/</h2>
 
 <p>GeoJSON is becoming a very popular data format among many GIS technologies and services - it's simple, lightweight, straightforward, and Leaflet is quite good at handling it. In this example, you'll learn how to create and interact with map vectors created from <a href="http://geojson.org/">GeoJSON</a> objects.</p>
 
