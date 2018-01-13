@@ -16,11 +16,11 @@
 #encoding: utf-8
 #language: ru-ru
 
-title: "Closed tracking of cars"
-##repository: bopoh13/ctc-leaflet1
+title: Closed tracking of cars
 name: Tester
 email: tester@example.com
-##description: > # this means to ignore newlines until "baseurl:"
+##repository: bopoh13/ctc-leaflet1
+description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
@@ -48,6 +48,11 @@ defaults:
       type: posts # previously `page` in Jekyll 2.2.
     values:
       layout: post
+  - scope:
+      path: "" # an empty string here means all files in the project
+      type: pages # previously `page` in Jekyll 2.2.
+    values:
+      layout: main
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
