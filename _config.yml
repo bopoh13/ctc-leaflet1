@@ -16,6 +16,7 @@
 #encoding: utf-8
 #language: ru-ru
 
+version: 3.7.0
 title: Closed tracking of cars
 name: Tester
 email: tester@example.com
@@ -27,14 +28,13 @@ description: > # this means to ignore newlines until "baseurl:"
 meta_description: script, test
 ##baseurl: "/ctc-leaflet1" # the subpath of your site, e.g. /blog
 ##url: "https://bopoh13.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-permalink: /:title # We remove posts from the `posts` of the date
 #layouts: _layouts
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
 # Build settings
-markdown: > # Jekyll 3 now only supports Kramdown for Markdown
-  kramdown
+# Jekyll 3 now only supports Kramdown for Markdown
+markdown: kramdown
 timezone: Europe/Moscow
 
 #theme: minima
@@ -42,12 +42,13 @@ plugins:
   - jekyll-feed
 #  - jekyll-redirect-from
 
+## More https://habrahabr.ru/post/336266/ and https://github.com/jekyll/jekyll/blob/master/docs/_config.yml
+collections:
+  posts:
+    permalink: "/post/:short_year:month:day.:output_ext"
+    output: true
+
 defaults:
-  - scope:
-      path: "" # an empty string here means all files in the project
-      type: posts # previously `page` in Jekyll 2.2.
-    values:
-      layout: post
   - scope:
       path: "" # an empty string here means all files in the project
       type: pages # previously `page` in Jekyll 2.2.

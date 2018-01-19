@@ -2,19 +2,15 @@
 layout: page
 title: Test Map
 permalink: /map/
-redirect_from: /post/333/
 robots: noindex, nofollow
 sitemap: false
 ---
 
 <h3>Using GeoJSON with Leaflet</h3>
 
-<h2>https://bopoh13.github.io/ctc-leaflet1/post/333/</h2>
-
 <p>GeoJSON is becoming a very popular data format among many GIS technologies and services - it's simple, lightweight, straightforward, and Leaflet is quite good at handling it. In this example, you'll learn how to create and interact with map vectors created from <a href="http://geojson.org/">GeoJSON</a> objects.</p>
 
 <div id="map" class="map" style="height: 450px"></div>
-<div id="export"><a href="#">Export Data</a></div>
 
 <script src="../examples/sample-geojson-test.js"></script>
 <script>
@@ -27,13 +23,29 @@ sitemap: false
 		minZoom: 3
 	}).setView([lat, lng], 12);
 
-	L.tileLayer(MB_URL, {
+	var osm = L.tileLayer(MB_URL, {
 		attribution: MB_ATTR,
 		id: 'mapbox.light'
-	}).addTo(map);
+	});
+
+	osm.addTo(map);
 
 	L.control.scale().addTo(map); // Пример отображения масштаба
 
+
+var sale = new L.LayerGroup();
+
+L.circle([52.502, 39.24], 300, {
+  stroke: false,
+  fillColor: 'green',
+  fillOpacity: 0.7
+}).addTo(sale);
+
+L.control.layers({
+  "Open Street Map" : osm
+}, {
+  "Продажа и пополнение": sale
+}).addTo(map);
 
 	var bounds = [[52.505, 39.23], [52.5, 39.25]];
 

@@ -1,6 +1,6 @@
 ---
 layout: redirected
 sitemap: false
-redirect_to: /welcome
+redirect_to: post/17
 sitemap: false
 ---

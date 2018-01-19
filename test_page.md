@@ -1,7 +1,7 @@
 ---
 layout: redirected
-title: Test Page 2
-redirect_to: /post/333/
+title: Test -> Map
+redirect_to: /map/
 sitemap: false
 ---
 

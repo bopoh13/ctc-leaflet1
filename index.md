@@ -6,5 +6,3 @@ lang: en-us
 layout: home
 robots: noindex, nofollow
 ---
-
-<h1>Main page</h1>
