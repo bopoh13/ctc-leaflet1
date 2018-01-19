@@ -51,7 +51,7 @@ L.control.layers({
 	var info = L.control();
 
 	info.onAdd = function (map) {
-		this._div = L.DomUtil.create('div', 'info');
+		this._div = L.DomUtil.create('div', 'info legend');
 		this.update();
 		return this._div;
 	};
@@ -83,6 +83,7 @@ L.control.layers({
 	    // there e.lanlng === L.LatLng on map
 	    // there e.target.getLatLngs() - your rectangle coordinates
 	    // but e.target !== rect
+	    info.update(e);
 	    console.info(e);
 	}).addTo(map);
 
