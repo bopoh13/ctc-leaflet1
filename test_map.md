@@ -126,7 +126,8 @@ L.control.layers({
 		console.log(circle._latlng.lat, circle._latlng.lng);
 	});
 
-	L.marker.bindTooltip("my tooltip text").openTooltip();
+        // L.marker(getRandomLatLng())
+	L.marker([52.505, 39.23]).addTo(map).bindTooltip("my tooltip text", {direction: 'top', offset: [-25, -25]}).openTooltip();
 
 </script>
 
