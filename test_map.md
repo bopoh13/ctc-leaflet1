@@ -44,8 +44,25 @@ L.circle([52.753, 39.298], 300, {
 L.control.layers({
   "Open Street Map" : osm
 }, {
-  "Продажа и пополнение": sale
+  "just Point": sale
 }).addTo(map);
+
+	// control that shows state info on hover
+	var info = L.control();
+
+	info.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info');
+		this.update();
+		return this._div;
+	};
+
+	info.update = function (props) {
+		this._div.innerHTML = '<h4>Координаты центра</h4>' +  (props ?
+			'lan: ' + map.getCenter()._latlng.lat + '<br />lng: ' + map.getCenter()._latlng.lng : 'Координат нет');
+	};
+
+	info.addTo(map);
+
 
 	var bounds = [[52.505, 39.23], [52.5, 39.25]];
 
@@ -127,7 +144,7 @@ L.control.layers({
 	});
 
         // L.marker(getRandomLatLng())
-	L.marker([52.505, 39.23]).addTo(map).bindTooltip("my tooltip text", {direction: 'top', offset: [-25, -25]}).openTooltip();
+	L.marker([52.737227, 39.26419]).addTo(map).bindTooltip("my tooltip text", {direction: 'left', offset: [-250, -250]}).openTooltip();
 
 </script>
 
