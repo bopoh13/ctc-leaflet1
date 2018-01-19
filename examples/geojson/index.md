@@ -5,7 +5,7 @@ title: Using GeoJSON with Leaflet
 
 <h3>Using GeoJSON with Leaflet</h3>
 
-<p>GeoJSON is becoming a very popular data format among many GIS technologies and services — it's simple, lightweight, straightforward, and Leaflet is quite good at handling it. In this example, you'll learn how to create and interact with map vectors created from <a href="http://geojson.org/">GeoJSON</a> objects.</p>
+<p>GeoJSON is becoming a very popular data format among many GIS technologies and services - it's simple, lightweight, straightforward, and Leaflet is quite good at handling it. In this example, you'll learn how to create and interact with map vectors created from <a href="http://geojson.org/">GeoJSON</a> objects.</p>
 
 {% include frame.html url="example.html" %}
 

@@ -1,5 +1,6 @@
 ---
 layout: redirected
 sitemap: false
-redirect_to:  geojson/example.html
+redirect_to: /welcome
+sitemap: false
 ---
