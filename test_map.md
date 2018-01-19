@@ -58,10 +58,18 @@ L.control.layers({
 
 	info.update = function (props) {
 		this._div.innerHTML = '<h4>Координаты центра</h4>' +  (props ?
-			'lan: ' + map.getCenter()._latlng.lat + '<br />lng: ' + map.getCenter()._latlng.lng : 'Координат нет');
+			'lan: ' + props.latlng.lat + '<br />lng: ' + props.latlng.lng : 'Координат нет');
 	};
 
-	info.addTo(map);
+	info.on('click', function (e) {
+	    // There event is event object
+	    // there e.type === 'click'
+	    // there e.lanlng === L.LatLng on map
+	    // there e.target.getLatLngs() - your rectangle coordinates
+	    // but e.target !== rect
+	    info.update(e);
+	}).addTo(map);
+
 
 
 	var bounds = [[52.505, 39.23], [52.5, 39.25]];
