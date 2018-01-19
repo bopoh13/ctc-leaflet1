@@ -61,15 +61,7 @@ L.control.layers({
 			'lan: ' + props.latlng.lat + '<br />lng: ' + props.latlng.lng : 'Координат нет');
 	};
 
-	info.on('click', function (e) {
-	    // There event is event object
-	    // there e.type === 'click'
-	    // there e.lanlng === L.LatLng on map
-	    // there e.target.getLatLngs() - your rectangle coordinates
-	    // but e.target !== rect
-	    info.update(e);
-	}).addTo(map);
-
+	info.addTo(map);
 
 
 	var bounds = [[52.505, 39.23], [52.5, 39.25]];
@@ -83,7 +75,7 @@ L.control.layers({
 	    // there e.lanlng === L.LatLng on map
 	    // there e.target.getLatLngs() - your rectangle coordinates
 	    // but e.target !== rect
-	    info.update(e);
+	    // info.update(e);  // bug
 	    console.info(e);
 	}).addTo(map);
 
