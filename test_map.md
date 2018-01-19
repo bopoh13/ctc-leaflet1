@@ -35,7 +35,7 @@ sitemap: false
 
 var sale = new L.LayerGroup();
 
-L.circle([52.502, 39.24], 300, {
+L.circle([52.753, 39.298], 300, {
   stroke: false,
   fillColor: 'green',
   fillOpacity: 0.7
