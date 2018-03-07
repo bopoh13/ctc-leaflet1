@@ -55,6 +55,8 @@ defaults:
     values:
       layout: main
 
+# Exclude these files from your production _site
+#
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
