@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-encoding: bom|utf-8
+#encoding: bom|utf-8
 #language: ru-ru
 
 version: 3.7.0
@@ -45,7 +45,7 @@ plugins:
 ## More https://habrahabr.ru/post/336266/ and https://github.com/jekyll/jekyll/blob/master/docs/_config.yml
 collections:
   posts:
-    permalink: "/post/:short_year:month:day.:output_ext"
+    permalink: "/post/:short_year:month:day:output_ext"
     output: true
 
 defaults:
