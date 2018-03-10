@@ -1,6 +1,6 @@
 ---
 layout: tutorial_v2
-title: Using GeoJSON with Leaflet
+title: Using JSON with Leaflet
 ---
 
 <h3>Using GeoJSON with Leaflet</h3>
