@@ -2,9 +2,8 @@
 layout: post
 title: "Характеристики аккумуляторов 18650"
 description: "Краткие характеристики литий-ионных аккумуляторов типоразмера 18650."
-date: 2017-03-10 22:30:00 +03:00
+date: 2017-03-10 23:22:00 +03:00
 categories: charger
-cover_url: "//action24.camera/userfiles/shop/large/1531_panasonic-ncr18650b-3400mah-akkumulyator.jpg"
 author: bopoh13
 ---
 > В статье даны краткие характеристики литий-ионных аккумуляторов типоразмера 18650.

@@ -37,7 +37,7 @@ meta_description: script, test
 markdown: kramdown
 timezone: Europe/Moscow
 
-#theme: minima
+theme: minima
 plugins:
   - jekyll-feed
 #  - jekyll-redirect-from
