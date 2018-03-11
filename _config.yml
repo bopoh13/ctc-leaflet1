@@ -14,7 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 #encoding: bom|utf-8
-#language: ru-ru
+language: ru-ru
+lang: ru
 
 version: 3.7.0
 title: Closed tracking of cars

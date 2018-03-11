@@ -1,4 +1,4 @@
-п»ї---
+---
 layout: page
 title: Test Map
 permalink: /map/
@@ -31,7 +31,7 @@ sort: 1
 
 	osm.addTo(map);
 
-	L.control.scale().addTo(map); // РџСЂРёРјРµСЂ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РјР°СЃС€С‚Р°Р±Р°
+	L.control.scale().addTo(map); // Пример отображения масштаба
 
 
 var sale = new L.LayerGroup();
@@ -58,8 +58,8 @@ L.control.layers({
 	};
 
 	info.update = function (props) {
-		this._div.innerHTML = '<h4>РљРѕРѕСЂРґРёРЅР°С‚С‹ С†РµРЅС‚СЂР°</h4>' +  (props ?
-			'lan: ' + props.latlng.lat + '<br />lng: ' + props.latlng.lng : 'РљРѕРѕСЂРґРёРЅР°С‚ РЅРµС‚');
+		this._div.innerHTML = '<h4>Координаты центра</h4>' +  (props ?
+			'lan: ' + props.latlng.lat + '<br />lng: ' + props.latlng.lng : 'Координат нет');
 	};
 
 	info.addTo(map);
@@ -131,7 +131,7 @@ L.control.layers({
 
 	coorsLayer.addData(coorsField);
 
-	// РњРёС€РµРЅСЊ РІ С†РµРЅС‚СЂРµ СЌРєСЂР°РЅР°
+	// Мишень в центре экрана
 	var circle = new L.circle([lat, lng], radius, {
 		color: 'red',
 		fillColor: '#f03',
