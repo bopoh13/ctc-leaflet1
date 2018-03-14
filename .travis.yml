@@ -1,9 +1,9 @@
-bundler_args: --without benchmark:site:development
-#script: script/cibuild
-cache: bundler
 language: ruby
-
 rvm:
+<<<<<<< HEAD
+- 2.3.3
+script: "bundle exec jekyll build"
+=======
   - 2.3.3
 
 install:
@@ -16,9 +16,12 @@ branches:
   - [master]
 #  - /pages-(.*)/ # test every branch which starts with "pages-"
 
-env:
-  global:
-    - JEKYLL_ENV=production
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+script: "bundle exec jekyll build"
+
+#env:
+#  global:
+#    - JEKYLL_ENV=production
+#    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+>>>>>>> bc19f5aa03681b45eb21e3e88312edcaa15c91d4
 
 sudo: false # if error set "required"
