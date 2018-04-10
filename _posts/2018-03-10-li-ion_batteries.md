@@ -7,7 +7,9 @@ categories: charger
 author: bopoh13
 ---
 
-ah? 
+&#xD7;&#215;&times;
+&#x2199;&#8601;
+&#x2198;&#8600;
 
 |-----------------+------------+-----------------+----------------|
 | Default aligned |Left aligned| Center aligned  | Right aligned  |
