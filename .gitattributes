@@ -12,7 +12,7 @@
 # To view the endline in the files you can use the command 'git ls-files --eol'
 # It can be specified: 'w/crlf', 'w/lf', 'w/mixed'
 # Auto detect text files and perform CRLF normalization
-* text=auto whitespace=tab-in-indent,tabwidth=4
+* text=auto whitespace=-space-before-tab,tab-in-indent,tabwidth=4
 
 # For the work in GitHub on Windows with transferring files to a remote 
 # repository in UTF-8 without BOOM
