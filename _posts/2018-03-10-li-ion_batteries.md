@@ -10,6 +10,11 @@ author: bopoh13
 &#xD7;&#215;&times;
 &#x2199;&#8601;
 &#x2198;&#8600;
+&#10561;&#8623;
+&leftarrow;&ShortLeftArrow;&slarr;
+&LeftTeeArrow;&mapstoleft;
+&circlearrowleft;&olarr;
+&circlearrowright;&orarr;
 
 |-----------------+------------+-----------------+----------------|
 | Default aligned |Left aligned| Center aligned  | Right aligned  |
