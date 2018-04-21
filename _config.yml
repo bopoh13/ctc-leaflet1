@@ -23,8 +23,8 @@ autor: Tester
 email: tester@example.com
 ##repository: bopoh13/ctc-leaflet1
 description: > # this means to ignore newlines until "baseurl:"
-  &#8635; Надоело собирать закладки: теперь они будут грокать здесь.  
-  &#8612; Об ошибках в тексе можно сообщить сюда.
+  ↤ Об ошибках в тексе можно сообщить сюда. 
+  ↻ Надоело собирать закладки: теперь они будут грокать здесь.  
 meta_description: script, test
 ##baseurl: "/ctc-leaflet1" # the subpath of your site, e.g. /blog
 ##url: "https://bopoh13.github.io" # the base hostname & protocol for your site, e.g. http://example.com
