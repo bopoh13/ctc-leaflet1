@@ -17,11 +17,11 @@ lang: ru
 
 version: 3.7.0
 title: Closed tracking of cars
-autor: Надоело сортировать закладки: теперь они будут грокать здесь.
+autor: Tired of sorting the bookmarks: now they will be groking here.
 email: tester@example.com
 ##repository: bopoh13/ctc-leaflet1
 description: > # this means to ignore newlines until "baseurl:"
-  Об ошибках в тексе можно сообщить сюда.
+  You can report errors in the text here.
 meta_description: script, test
 ##baseurl: "/ctc-leaflet1" # the subpath of your site, e.g. /blog
 ##url: "https://bopoh13.github.io" # the base hostname & protocol for your site, e.g. http://example.com
