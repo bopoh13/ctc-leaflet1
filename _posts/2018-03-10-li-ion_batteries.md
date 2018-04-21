@@ -11,10 +11,10 @@ author: bopoh13
 &#x2199;&#8601;
 &#x2198;&#8600;
 &#10561;&#8623;
-&leftarrow;&ShortLeftArrow;&slarr;
-&LeftTeeArrow;&mapstoleft;
-&circlearrowleft;&olarr;
-&circlearrowright;&orarr;
+&#8592;&leftarrow;&ShortLeftArrow;&slarr;
+&#8612;&LeftTeeArrow;&mapstoleft;
+&#8634;&circlearrowleft;&olarr;
+&#8635;&circlearrowright;&orarr;
 
 |-----------------+------------+-----------------+----------------|
 | Default aligned |Left aligned| Center aligned  | Right aligned  |
