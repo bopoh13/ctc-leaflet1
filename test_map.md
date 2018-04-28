@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Test Map
-permalink: /map/
+permalink: /Map/
 robots: noindex, nofollow
 sitemap: false
 sort: 1

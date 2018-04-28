@@ -1,7 +1,7 @@
 ---
 layout: redirected
-title: Test -> Map
-redirect_to: /ctc-leaflet1/map/
+title: Test -> page
+redirect_to: /ctc-leaflet1/Map/
 sitemap: false
 ---
 

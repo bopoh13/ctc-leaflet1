@@ -17,6 +17,7 @@
 # For the work in GitHub on Windows with transferring files to a remote 
 # repository in UTF-8 without BOOM
 *.html filter=win1251
+*.css text whitespace=blank-at-eol,-blank-at-eof,-space-before-tab,tab-in-indent,tabwidth=2
 *.jpg  -text diff
 *.md   filter=win1251 whitespace=trailing-space,space-before-tab,indent-with-non-tab
 *.png  -text diff
