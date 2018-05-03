@@ -6,9 +6,9 @@ deploy:
   on:
     branch: master
 
-language: ruby
-rvm:
-- 2.3.3
-script: "bundle exec jekyll build"
+#language: ruby
+#rvm:
+#- 2.3.3
+#script: "bundle exec jekyll build"
 
-sudo: false # if error set "required"
+#sudo: false # if error set "required"
