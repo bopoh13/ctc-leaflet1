@@ -1,7 +1,7 @@
 deploy:
   provider: pages
   skip-cleanup: true
-#  github-token: LYYlVMbAyobShMTBQbhJwg  # Set in the settings page of your repository, as a secure variable
+  github-token: f20bcaab6223bcbff2d25fc5fa6556fbf0e6e88e  # Set in the settings page of your repository, as a secure variable
 #  keep-history: true
   on:
     branch: master
