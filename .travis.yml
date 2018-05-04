@@ -1,6 +1,7 @@
 before_install:
-  - travis_retry gem update --system
-  - travis_retry gem install bundler
+  - gem update --system
+# This is a workaround for a problem with a specific version of bundler and rubygems
+#  - travis_retry gem install bundler
 
 # script: bundle exec rake
 
