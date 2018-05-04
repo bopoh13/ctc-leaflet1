@@ -1,11 +1,13 @@
 # Enables Travis to use their new container-based infrastructure
-sudo: false
+#sudo: false
 
-#before_install:
-#  - gem update --system
+before_install:
+  - gem update --system
 # This is a workaround for a problem with a specific version of bundler and rubygems
 #  - travis_retry gem install bundler
 
+# Define how to run your tests (defaults to `bundle exec rake` or `rake` depending on whether you have a `Gemfile`)
+script: "bundle exec rake"
 
 deploy:
   provider: pages
