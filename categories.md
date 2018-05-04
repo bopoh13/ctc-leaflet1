@@ -1,6 +1,6 @@
 ---
 layout: categories
-title: Категории
+title: Categories
 description: Мои статьи
 keywords: классификация
 #comments: false
