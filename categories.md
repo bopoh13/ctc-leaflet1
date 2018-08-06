@@ -4,7 +4,7 @@ title: Categories
 description: Мои статьи
 keywords: классификация
 #comments: false
-menu: класс
+menu: класс; core.autocrlf false
 permalink: /categories/
 ---
 
