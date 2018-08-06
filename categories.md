@@ -22,4 +22,4 @@ permalink: /categories/
                 </ol>
   {% endfor %}
 </section>
-<!-- /section.content -->
+<!-- /section.content --> 
