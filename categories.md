@@ -4,7 +4,7 @@ title: Categories
 description: Мои статьи
 keywords: классификация
 #comments: false
-menu: класс; core.autocrlf false
+menu: класс
 permalink: /categories/
 ---
 
@@ -22,4 +22,4 @@ permalink: /categories/
                 </ol>
   {% endfor %}
 </section>
-<!-- /section.content -->
+<!-- /section.content -->
