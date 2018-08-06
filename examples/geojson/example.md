@@ -1,4 +1,4 @@
-﻿---
+---
 layout: tutorial_frame
 #title: GeoJSON tutorial
 ---
@@ -11,7 +11,7 @@ layout: tutorial_frame
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+			'Imagery В© <a href="http://mapbox.com">Mapbox</a>',
 		id: 'mapbox.light'
 	}).addTo(map);
 
