@@ -1,10 +1,10 @@
 ---
 layout: categories
 title: Categories
-description: РњРѕРё СЃС‚Р°С‚СЊРё
-keywords: РєР»Р°СЃСЃРёС„РёРєР°С†РёСЏ
+description: Мои статьи
+keywords: классификация
 #comments: false
-menu: РєР»Р°СЃСЃ
+menu: класс
 permalink: /categories/
 ---
 
@@ -16,10 +16,10 @@ permalink: /categories/
     {% for post in category.last %}
                 <li class="posts-list-item">
                   <span class="posts-list-meta">{{ post.date | date:"%Y-%m-%d" }}</span>
-                  <a class="posts-list-name" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                  <a class="posts-list-name" href="{{ post.url | relative_url }}">{{ post.title }}</a>
                 </li>
     {% endfor %}
                 </ol>
   {% endfor %}
 </section>
-<!-- /section.content -->
+<!-- /section.content -->
