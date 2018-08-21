@@ -1,5 +1,5 @@
 ---
-layout: tutorial_v2
+layout: tutorial
 title: Using JSON with Leaflet
 ---
 
