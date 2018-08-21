@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "/ctc-leaflet1" # the subpath of your site, e.g. /blog
 url: "https://bopoh13.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-layouts: ./_layouts
+#layouts: ./_layouts
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
@@ -39,16 +39,16 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
-      layout: "main"
+      layout: "default"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
 #   - Gemfile
-  - Gemfile.lock
+#  - Gemfile.lock
 #   - node_modules
-  - [vendor]
+#  - [vendor]
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
