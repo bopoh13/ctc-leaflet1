@@ -29,7 +29,7 @@ layouts: ./_layouts
 ## Jekyll 3 now only supports Kramdown for Markdown https://toster.ru/q/331849
 markdown: kramdown
 
-theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.12.1"
 plugins:
   - jekyll-feed
 
