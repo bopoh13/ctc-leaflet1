@@ -20,7 +20,7 @@
 language: ruby
 
 script:
-  - bundle exec jekyll algolia --source test --destination test/_site --config test/_config.yml
+  - bundle exec jekyll algolia --destination _site --config _config.yml
 
 branches:
   only:

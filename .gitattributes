@@ -18,7 +18,7 @@
 # repository in UTF-8 without BOOM
 *.html	filter=win1251
 *.css	whitespace=blank-at-eol,-blank-at-eof,-space-before-tab,tab-in-indent,tabwidth=2
-*.jpg	-text	diff
+*.jpg	-text	-diff
 *.md	whitespace=trailing-space,space-before-tab,indent-with-non-tab
-*.png	-text	diff
+*.png	-text	-diff
 *.svg	whitespace=blank-at-eol,-blank-at-eof,-space-before-tab,tab-in-indent,tabwidth=2
