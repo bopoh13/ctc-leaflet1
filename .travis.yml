@@ -17,6 +17,9 @@
 #  on:
 #    branch: master
 
+rvm:
+  - 2.4
+
 language: ruby
 
 script:
@@ -26,6 +29,3 @@ branches:
   only:
   - backup
 #  - /pages-(.*)/ # test every branch which starts with "pages-"
-
-rvm:
-- 2.4
