@@ -36,7 +36,7 @@ meta_description: script, test
 markdown: kramdown
 timezone: Europe/Moscow
 
-#theme: minima
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
 #  - jekyll-redirect-from
@@ -47,12 +47,12 @@ collections:
     permalink: "/post/:short_year:month:day:output_ext"
     output: true
 
-defaults:
-  - scope:
-      path: "" # an empty string here means all files in the project
-      type: pages # previously `page` in Jekyll 2.2.
-    values:
-      layout: main
+#defaults:
+#  - scope:
+#      path: "" # an empty string here means all files in the project
+#      type: pages # previously `page` in Jekyll 2.2.
+#    values:
+#      layout: default
 
 # Exclude these files from your production _site
 #
@@ -67,5 +67,3 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-theme: jekyll-theme-cayman
