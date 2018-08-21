@@ -18,14 +18,14 @@
 #    branch: master
 
 language: ruby
-rvm:
-- 2.3.3
+
+script:
+  - bundle exec jekyll algolia --source test --destination test/_site --config test/_config.yml
 
 branches:
   only:
-  - [backup]
+  - backup
 #  - /pages-(.*)/ # test every branch which starts with "pages-"
 
-script: "bundle exec jekyll build"
-
-sudo: false # if error set "required"
+rvm:
+- 2.4
