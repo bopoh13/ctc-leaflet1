@@ -1,10 +1,6 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-lang: en-us
 layout: home
-robots: noindex, nofollow
+author_profile: true
 ---
 
-<h1>Main page</h1>
+<p>This text should appear above the recent posts.</p>
