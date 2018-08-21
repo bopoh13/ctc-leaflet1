@@ -52,7 +52,7 @@ collections:
 #      path: "" # an empty string here means all files in the project
 #      type: pages # previously `page` in Jekyll 2.2.
 #    values:
-#      layout: default
+#      layout: "default"
 
 # Exclude these files from your production _site
 #
